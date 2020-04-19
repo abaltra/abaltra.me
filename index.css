@@ -47,12 +47,6 @@ body a .wrapper .description:any-link , :active, :hover, :visited{
     color: #ffdc38
 }
 
-body .wrapper .social {
-    width: 100%;
-    margin-top: 20px;
-    background-color: red;
-}
-
 .social-links {
     margin-top: 20px;
     height:100px;
@@ -106,6 +100,7 @@ body .wrapper .social {
 .social-image {
     height: 60px;
     transition: opacity .5s ease-in-out;
+    filter: invert(100%);
 }
 
 .social-image:hover ~ .social-text{
@@ -118,10 +113,14 @@ body .wrapper .social {
     margin-block-start: 0;
     opacity: 0;
     transition: opacity 1s ease;
-    color: white;
+    color: #ffdc38;
     text-decoration: none;
 }
 
 .social-text:hover :any-link {
     text-decoration: none;
+}
+
+.filtered {
+    filter: invert();
 }
