@@ -1,10 +1,11 @@
 body {
     font-family: Raleway;
     display: flex;
-    margin-top: 80px;
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-top: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
     background:#303030;
+    /* background: black; */
 }
 
 body .wrapper {
@@ -28,21 +29,99 @@ body .wrapper .name {
     color: #e6e6e6;
 }
 
+.description-link {
+    color: #ffdc38
+}
 
 body .wrapper .description {
     flex-grow: 2;
     max-width: 70%;
     margin-left: 10px;
     color: #69d7f0;
+    /* color: #c15dc1; */
     line-height: 1.6em;
 } 
 
-body .wrapper .description:link, :visited {
-    color:#e6e6e6;
+body a .wrapper .description:any-link , :active, :hover, :visited{
+    /* color:#e6e6e6; */
+    color: #ffdc38
 }
 
 body .wrapper .social {
     width: 100%;
     margin-top: 20px;
     background-color: red;
+}
+
+.social-links {
+    margin-top: 20px;
+    height:100px;
+    width:100%;
+    /* background: white; */
+    /* clip-path: polygon(50% 0%, 69.16% -15.01%, 81.29% 80.00%, 95.14% -133px, 93.2% 136.04%, 50.97% 117.54%, 1px 83.81%, 0px 0px); */
+}
+
+.social-navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+.social-navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.social-item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* .social-navbar-nav a {
+    width: 100%;
+    height: 100%;
+} */
+
+.social-link:hover .social-image{
+    opacity: .1;
+}
+
+.social-link:hover .social-text{
+    opacity: 1;
+    height: auto;
+    text-decoration: none;
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.social-image {
+    height: 60px;
+    transition: opacity .5s ease-in-out;
+}
+
+.social-image:hover ~ .social-text{
+    opacity: 1;
+}
+
+.social-text {
+    position: relative;
+    bottom: 45px;
+    margin-block-start: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.social-text:hover :any-link {
+    text-decoration: none;
 }
