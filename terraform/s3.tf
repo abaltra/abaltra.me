@@ -29,7 +29,7 @@ EOF
 resource "aws_s3_bucket_object" "indexes" {
   for_each = fileset("../site/", "*")
 
-  content_type = "text.html"
+  content_type = "text/html"
   bucket = aws_s3_bucket.bucket.id
   key    = each.value
   source = "../site/${each.value}"
