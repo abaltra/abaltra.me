@@ -67,6 +67,7 @@ body a .wrapper .description:any-link , :active, :hover, :visited{
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+    padding-left: 0;
 }
 
 .social-item {
